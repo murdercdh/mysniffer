@@ -1,0 +1,70 @@
+// mysniffer.odl : type library source for mysniffer.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (mysniffer.tlb).
+
+[ uuid(A2346940-8DA3-4CD8-B78D-C3ACCA65C98D), version(1.0) ]
+library Mysniffer
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	//  Primary dispatch interface for CMysnifferDoc
+	
+	[ uuid(2E84B7D2-5F3D-49D2-82AA-81A4B49B1661) ]
+	dispinterface IMysniffer
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CMysnifferDoc)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CMysnifferDoc)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CMysnifferDoc
+	
+	[ uuid(D7C9A84C-A0EB-4F07-8AFB-D9A1FB6C5CFA) ]
+	coclass Document
+	{
+		[default] dispinterface IMysniffer;
+	};
+
+
+	//  Primary dispatch interface for CMyToolDialog
+	
+	[ uuid(999D29F8-25E1-425A-814D-C4D7C6ED71AC) ]
+	dispinterface IMyToolDialog
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CMyToolDialog)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CMyToolDialog)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CMyToolDialog
+
+	[ uuid(D83B7A16-037E-4E7A-A01E-D88681A0393E) ]
+	coclass MyToolDialog
+	{
+		[default] dispinterface IMyToolDialog;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

@@ -1,0 +1,13 @@
+REGEDIT
+; This .REG file may be used by your SETUP program.
+;   If a SETUP program is not available, the entries below will be
+;   registered in your InitInstance automatically with a call to
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+
+HKEY_CLASSES_ROOT\Mysniffer.Document = Mysnif Document
+HKEY_CLASSES_ROOT\Mysniffer.Document\CLSID = {D7C9A84C-A0EB-4F07-8AFB-D9A1FB6C5CFA}
+
+HKEY_CLASSES_ROOT\CLSID\{D7C9A84C-A0EB-4F07-8AFB-D9A1FB6C5CFA} = Mysnif Document
+HKEY_CLASSES_ROOT\CLSID\{D7C9A84C-A0EB-4F07-8AFB-D9A1FB6C5CFA}\ProgId = Mysniffer.Document
+HKEY_CLASSES_ROOT\CLSID\{D7C9A84C-A0EB-4F07-8AFB-D9A1FB6C5CFA}\LocalServer32 = MYSNIFFER.EXE
